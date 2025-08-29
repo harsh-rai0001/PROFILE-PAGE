@@ -1,146 +1,181 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Harsh Rai | Profile</title>
+  <meta charset="UTF-8">
+  <title>Harsh Rai | Portfolio</title>
   <style>
-    /* Body background */
     body {
-      font-family: "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
     }
 
-    /* Profile Card */
-    .profile {
-      background: white;
-      padding: 30px;
-      width: 400px;
-      border-radius: 20px;
+    /* Header */
+    header {
+      background: #161b22;
+      padding: 20px;
       text-align: center;
-      box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+      border-bottom: 1px solid #30363d;
     }
-    .profile:hover {
-      transform: translateY(-10px);
-    }
-
-    /* Avatar */
-    .avatar {
+    header img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 4px solid #0288d1;
-      margin-bottom: 15px;
-      object-fit: cover;
+      border: 3px solid #30363d;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 26px;
+      color: #fff;
+    }
+    header p {
+      margin: 0;
+      font-size: 14px;
+      color: #8b949e;
     }
 
-    /* Text */
-    h2 {
-      margin: 10px 0 5px;
-      font-size: 24px;
-      color: #333;
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
-    p {
-      font-size: 14px;
-      color: #555;
+
+    /* Section Titles */
+    h2 {
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+      color: #58a6ff;
     }
 
     /* Skills */
-    .skills {
-      margin: 20px 0;
-      text-align: center;
-    }
     .skills span {
       display: inline-block;
-      margin: 5px;
+      background: #21262d;
+      color: #c9d1d9;
       padding: 6px 12px;
-      font-size: 13px;
+      margin: 5px;
       border-radius: 20px;
-      background: #0288d1;
-      color: white;
-      transition: background 0.3s;
-    }
-    .skills span:hover {
-      background: #01579b;
+      font-size: 13px;
+      border: 1px solid #30363d;
     }
 
-    /* Projects */
+    /* Projects Grid */
     .projects {
-      text-align: left;
-      margin: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
     }
-    .projects h3 {
-      margin-bottom: 10px;
-      color: #0288d1;
-    }
-    .projects a {
-      display: block;
-      padding: 10px;
-      margin: 8px 0;
-      text-decoration: none;
+    .project {
+      background: #161b22;
+      padding: 15px;
+      border: 1px solid #30363d;
       border-radius: 10px;
-      background: #f5f5f5;
-      color: #333;
-      transition: all 0.3s;
+      transition: transform 0.2s;
     }
-    .projects a:hover {
-      background: #0288d1;
-      color: white;
+    .project:hover {
+      transform: translateY(-5px);
+      border-color: #58a6ff;
+    }
+    .project a {
+      text-decoration: none;
+      color: #58a6ff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .project p {
+      font-size: 13px;
+      color: #8b949e;
+      margin-top: 5px;
     }
 
-    /* Button */
-    button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: linear-gradient(90deg, #0288d1, #26c6da);
-      color: white;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 15px;
-      transition: transform 0.2s, background 0.3s;
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      margin-top: 30px;
     }
-    button:hover {
-      transform: scale(1.05);
-      background: linear-gradient(90deg, #01579b, #00acc1);
+    footer a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="profile">
-    <img src="img1.jpg" alt="Avatar" class="avatar">
-    <h2>Harsh Rai</h2>
-    <p>BCA student & frontend developer.<br>
-       Passionate about building clean, responsive web apps using HTML, CSS, JS, React, and Node.js.</p>
-    
-    <div class="skills">
-      <h3>Skills</h3>
-      <span>Java</span>
-      <span>JavaScript</span>
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>C++</span>
-      <span>C</span>
-      <span>React</span>
-      <span>MySQL</span>
-    </div>
-    
-    <div class="projects">
-      <h3>Projects</h3>
-      <a href="https://github.com/harsh-rai0001/ifsc-code-finder-" target="_blank">🏦 IFSC Code Finder</a>
-      <a href="https://github.com/harsh-rai0001/jarvis-chatbot-" target="_blank">🤖 Jarvis Chatbot</a>
-      <a href="https://github.com/harsh-rai0001/quiz-using-react" target="_blank">📝 Quiz using React</a>
-      <a href="https://github.com/harsh-rai0001/real-time-news-portal" target="_blank">📰 Real-time News Portal</a>
-      <a href="https://github.com/harsh-rai0001/real-time-weathher-app-using-api" target="_blank">☁️ Real-time Weather App</a>
-    </div>
-    
-    <button onclick="alert('Connect with me at: harshrai@example.com')">📩 Contact Me</button>
+
+  <!-- Header -->
+  <header>
+    <img src="img1.jpg" alt="Harsh Rai">
+    <h1>Harsh Rai</h1>
+    <p>BCA Student | Frontend Developer | Tech Enthusiast</p>
+  </header>
+
+  <div class="container">
+
+    <!-- About -->
+    <section>
+      <h2>👋 About Me</h2>
+      <p>Hi, I'm Harsh Rai — a BCA student and frontend developer passionate about building clean, responsive web apps. 
+         I work with HTML, CSS, JavaScript, React, and basic Node.js. Currently learning React ecosystem and API integration. 
+         Always open to collaborate — feel free to explore my work!</p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>🛠 Skills</h2>
+      <div class="skills">
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>C++</span>
+        <span>C</span>
+        <span>React</span>
+        <span>MySQL</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>📌 Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <a href="https://github.com/harsh-rai0001/ifsc-code-finder-" target="_blank">🏦 IFSC Code Finder</a>
+          <p>Find bank branch details using IFSC code (PHP project).</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/harsh-rai0001/jarvis-chatbot-" target="_blank">🤖 Jarvis Chatbot</a>
+          <p>A personal assistant chatbot built using JavaScript.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/harsh-rai0001/quiz-using-react" target="_blank">📝 Quiz using React</a>
+          <p>Interactive quiz app created with React.js.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/harsh-rai0001/real-time-news-portal" target="_blank">📰 Real-time News Portal</a>
+          <p>A web portal showing live news updates using APIs.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/harsh-rai0001/real-time-weathher-app-using-api" target="_blank">☁️ Real-time Weather App</a>
+          <p>Weather forecast app fetching data from API.</p>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>🌐 Connect with me on <a href="https://github.com/harsh-rai0001" target="_blank">GitHub</a></p>
+  </footer>
+
 </body>
 </html>
+
+
